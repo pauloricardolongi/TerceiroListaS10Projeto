@@ -37,10 +37,11 @@ public class Programa {
 		int idSalario = sc.nextInt();
 		
 		
+		
 		sc.close();
 
 	}//funcao auxiliar: para procurar a posição do  elemento na lista
-	public Integer hasId (List<Funcionario> list, int id) {
+	public Integer posicao (List<Funcionario> list, int id) {
 		for (int i=0; i < list.size(); i++) {
 			if(list.get(i).getId()== id) {
 				return i;
