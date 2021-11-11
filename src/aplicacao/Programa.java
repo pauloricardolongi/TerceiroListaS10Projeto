@@ -40,13 +40,13 @@ public class Programa {
 		sc.close();
 
 	}//funcao auxiliar: para procurar a posição do  elemento na lista
-	public int hasId (List<Funcionario> list, int id) {
+	public Integer hasId (List<Funcionario> list, int id) {
 		for (int i=0; i < list.size(); i++) {
 			if(list.get(i).getId()== id) {
 				return i;
 			}
 		}
-		return -1;
+		return null;
 	}
 
 }
