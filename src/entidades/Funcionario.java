@@ -43,5 +43,8 @@ public class Funcionario {
 		  salario = salario + salario * porcentagem / 100.0;      
 		
 	}
+	public String toString() {
+		return id + ", " + nome + ", "+ String.format("%.2f", salario);
+	}
 
 }
